@@ -229,7 +229,7 @@ const TeamRegistrationApp = () => {
 
   // Delete team
   const deleteTeam = async (teamId) => {
-    if (!confirm('Möchten Sie dieses Team wirklich löschen?')) return;
+    if (!window.confirm('Möchten Sie dieses Team wirklich löschen?')) return;
 
     const { error } = await supabase
       .from('teams')
